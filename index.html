@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome | Extra Paints</title>
+    <link rel="stylesheet" href="/style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+  <body class="font-body bg-gray-100">
+
+    <header id="navbar" class="fixed inset-x-0 top-0 z-50" x-data="{ menuOpen : false }">
+      <nav class="flex items-center justify-end lg:justify-center pt-5 lg:px-8" aria-label="Extra Paints">
+        <div class="flex mr-3 lg:hidden bg-white p-2 rounded-lg">
+          <button @click="menuOpen = true" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-900">
+            <span class="sr-only">Open main menu</span>
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </button>
+        </div>
+        <div class="relative hidden lg:flex items-center justify-center">
+          <div class="absolute flex gap-x-12 text-lg leading-6 text-white">
+            <a href="./">
+              Home
+            </a>
+            <a href="./">
+              Products
+            </a>
+            <a href="./">
+              Portfolio
+            </a>
+            <a href="./">
+              Team
+            </a>
+          </div>
+          <img class="h-24" src="/brush_stroke.svg" alt="brush">
+        </div>
+      </nav>
+      <!-- Mobile menu -->
+      <div x-show="menuOpen" class="lg:hidden" role="dialog" aria-modal="true">
+        <div class="fixed inset-0 z-50"></div>
+        <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <div class="flex items-center justify-end">
+            <button @click="menuOpen = false" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+              <span class="sr-only">Close menu</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-gray-500/10">
+              <div class="space-y-2 py-6">
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Product</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="hero" class="h-screen flex items-center justify-center">
+      <video src="/hero.mov" autoplay muted loop></video>
+      <div class="overlay"></div>
+      <div class="z-30 mt-10 lg:mx-24 px-6 py-8 text-gray-900">
+        <span class="font-title text-7xl lg:text-9xl rainbow">
+          Extra Paints
+        </span>
+        <h1 class="mt-8 text-2xl lg:text-4xl font-display">
+          Discover a world of vibrant possibilities with our premium paint collection
+        </h1>
+        <p class="mt-5 text-xl font-medium">
+          We are dedicated to providing you with the highest quality paints that transform your spaces into extraordinary works of art.
+        </p>
+      </div>
+    </section>
+
+    <div class="container mx-auto px-4 lg:px-8 xl:px-0 py-8">
+
+      <section class="p-4 lg:p-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div class="rounded-3xl shadow-xl overflow-hidden">
+            <img src="/about_2.jpg" alt="">
+          </div>
+          <div class="mt-3 text-lg text-justify">
+            <div class="relative flex items-center">
+              <h1 class="ml-8 absolute text-5xl font-display tracking-wide">
+                About Us
+              </h1>
+              <img class="h-20" src="/brush.svg" alt="">
+            </div>
+            <p class="mt-5">
+              Extra Paints, is your one-stop destination for all your painting needs!
+              We are a leading provider of high-quality paints and coatings, catering to both residential and commercial customers.
+              With a commitment to excellence and a passion for colors, we strive to enhance your spaces and bring your artistic visions to life.
+            </p>
+            <p class="mt-8">
+              Our paints are made with the highest quality ingredients and are designed to last.
+              We also offer a variety of finishes, from matte to gloss, so you can find the perfect paint for your project.
+            </p>
+            <p class="mt-8">
+              We take pride in our customer-centric approach. Our knowledgeable and friendly staff is always ready to assist you, providing personalized advice and recommendations based on your specific requirements.
+              Whether you're a professional painter or a DIY enthusiast, we are here to help you make informed decisions and achieve outstanding results.
+            </p>
+            <p class="mt-8">
+              Thank you for choosing Extra Paints as your trusted partner in painting solutions.
+              We look forward to helping you transform your spaces into works of art.
+              Explore our collection, unleash your creativity, and let the colors speak for themselves.
+            </p>
+          </div>
+        </div>
+        <div class="mt-24 grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div>
+            <div class="relative flex items-center">
+              <h1 class="absolute text-5xl font-display tracking-wide">
+                Our Mission
+              </h1>
+              <img class="h-20" src="/brush.svg" alt="">
+            </div>
+            <p class="mt-8 text-lg text-justify">
+              We are committed to providing our customers with the highest quality paints and coatings.
+              We strive to be a leader in the industry by providing innovative products that meet or exceed customer expectations.
+              Our goal is to provide you with a paint that will last for years, not just months.
+              We want you to love your new paint job as much as we do!
+            </p>
+            <p class="mt-8 text-lg text-justify">
+              We are dedicated to providing you with the highest quality paints that transform your spaces into extraordinary works of art.
+              We want to help you create a space that is uniquely yours.
+              Our paints are designed to last and will not fade or peel over time.
+              You can trust us to provide you with the best products on the market today.
+            </p>
+          </div>
+          <div class="rounded-3xl shadow-xl overflow-hidden">
+            <img src="/about_1.jpg" alt="">
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <section class="py-16 bg-cover bg-fixed" style="background-image: url(/cta.jpg);">
+      <div class="container mx-auto px-4 lg:px-8 xl:px-0 py-8">
+        <div class="flex flex-col justify-center">
+          <h1 class="text-4xl font-display text-gray-800">
+            Ready to get started?
+          </h1>
+          <p class="lg:w-2/3 mt-5 text-lg text-gray-800">
+            We're here to help you find the perfect paint for your project.
+            Our team of experts will work with you every step of the way, from choosing colors to applying them.
+            You can trust us to provide high-quality products and exceptional service at competitive prices.
+            Let us show you how easy it is to transform your space into something beautiful!
+          </p>
+          <div class="mt-8">
+            <a href="#" class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-gray-800 hover:bg-gray-700">
+              Get in touch
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-8">
+      <div class="container mx-auto px-4 lg:px-8 xl:px-0 py-8">
+        <div class="relative flex items-center">
+          <h1 class="ml-8 absolute text-5xl font-display tracking-wide">
+            Contact Us
+          </h1>
+          <img class="h-20" src="/brush.svg" alt="">
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div class="mt-12">
+            <div class="flex items-center">
+              <img class="h-16" src="/phone.svg" alt="phone">
+              <div class="ml-4 flex flex-col gap-1.5 text-xl font-medium">
+                <a href="tel://+254111701666">+254 111 701 666</a>
+                <a href="tel://+254111964114">+254 111 964 114</a>
+              </div>
+            </div>
+            <div class="mt-8 flex items-center">
+              <img class="h-12" src="/whatsapp.svg" alt="whatsapp">
+              <span class="ml-8 text-xl font-medium">
+                +254 738 425 408
+              </span>
+            </div>
+            <div class="mt-8 flex items-center">
+              <img class="h-12" src="/email.svg" alt="email">
+              <a href="mailto:info@extrapaints.co.ke" class="ml-8 text-xl font-medium">
+                info@extrapaints.co.ke
+              </a>
+            </div>
+            <div class="mt-8 flex items-center">
+              <img class="h-16" src="/location.svg" alt="location">
+              <div class="ml-4 flex flex-col text-lg font-medium">
+                <span>P.O BOX 23959 - 00625,</span>
+                <span>Donholm Godown,</span>
+                <span>Orion Drive,</span>
+                <span>Nairobi, Kenya</span>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-3xl overflow-hidden">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.198667141027!2d36.8862082790099!3d-1.29474297670905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f13bd95a385df%3A0xf603c3e52eabaca9!2sDonholm%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1685220144068!5m2!1sen!2ske" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
