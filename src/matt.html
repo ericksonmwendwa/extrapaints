@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vinyl Matt | Extra Paints</title>
+    <link rel="stylesheet" href="/style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  </head>
+  <body class="font-body bg-gray-100">
+
+    <header id="navbar" class="fixed inset-x-0 top-0 z-50" x-data="{ menuOpen : false }">
+      <nav class="flex items-center justify-end lg:justify-center pt-5 lg:px-8" aria-label="Extra Paints">
+        <div class="flex mr-3 lg:hidden bg-white p-2 rounded-lg">
+          <button @click="menuOpen = true" type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-900">
+            <span class="sr-only">Open main menu</span>
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </button>
+        </div>
+        <div class="relative hidden lg:flex items-center justify-center">
+          <div class="absolute flex gap-x-12 text-lg leading-6 text-white">
+            <a href="./">
+              Home
+            </a>
+            <div class="flex flex-col items-center">
+              <a href="products.html">
+                Products
+              </a>
+              <span class="mt-0.5 w-1/2 h-1 bg-white rounded-3xl"></span>
+            </div>
+            <a href="gallery.html">
+              Gallery
+            </a>
+          </div>
+          <img class="h-24" src="/navbar.svg" alt="brush">
+        </div>
+      </nav>
+      <!-- Mobile menu -->
+      <div x-show="menuOpen" class="lg:hidden" role="dialog" aria-modal="true">
+        <div class="fixed inset-0 z-50"></div>
+        <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <div class="flex items-center justify-end">
+            <button @click="menuOpen = false" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+              <span class="sr-only">Close menu</span>
+              <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="mt-6 flow-root">
+            <div class="-my-6 divide-y divide-gray-500/10">
+              <div class="space-y-2 py-6">
+                <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Product</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="h-60 lg:h-[450px] bg-fuchsia-900 flex items-center justify-center">
+      <div class="lg:mx-24 px-6 py-8 text-gray-100">
+        <h1 class="text-5xl lg:text-6xl font-display tracking-widest">
+          Vinyl Matt
+        </h1>
+      </div>
+    </section>
+
+    <section class="mt-12 container mx-auto px-4 lg:px-8 xl:px-0 py-12">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div class="flex gap-5">
+          <div class="flex flex-col gap-3">
+            <div class="p-0.5 border-2 border-fuchsia-900 rounded-lg">
+              <img class="thumbnail w-12 h-12 hover:cursor-pointer" src="" alt="loading">
+            </div>
+            <div class="p-0.5 border-2 border-fuchsia-900 rounded-lg">
+              <img class="thumbnail w-12 h-12 hover:cursor-pointer" src="" alt="loading">
+            </div>
+            <div class="p-0.5 border-2 border-fuchsia-900 rounded-lg">
+              <img class="thumbnail w-12 h-12 hover:cursor-pointer" src="" alt="loading">
+            </div>
+            <div class="p-0.5 border-2 border-fuchsia-900 rounded-lg">
+              <img class="thumbnail w-12 h-12 hover:cursor-pointer" src="" alt="loading">
+            </div>
+            <div class="p-0.5 border-2 border-fuchsia-900 rounded-lg">
+              <img class="thumbnail w-12 h-12 hover:cursor-pointer" src="" alt="loading">
+            </div>
+            <div class="p-0.5 border-2 border-fuchsia-900 rounded-lg">
+              <img class="thumbnail w-12 h-12 hover:cursor-pointer" src="" alt="loading">
+            </div>
+            <div class="p-0.5 border-2 border-fuchsia-900 rounded-lg">
+              <img class="thumbnail w-12 h-12 hover:cursor-pointer" src="" alt="loading">
+            </div>
+            <div class="p-0.5 border-2 border-fuchsia-900 rounded-lg">
+              <img class="thumbnail w-12 h-12 hover:cursor-pointer" src="" alt="loading">
+            </div>
+          </div>
+          <div class="w-full p-5 bg-gray-200 border-2 border-fuchsia-900 flex justify-center items-center rounded-3xl">
+            <div id="image-container">
+              <img id="image-viewer" src="" alt="vinyl matt">
+            </div>
+          </div>
+        </div>
+        <div class="mt-3">
+          <h2 class="text-4xl font-bold">Vinyl Matt</h2>
+          <span class="text-gray-500">Interior | Exterior</span>
+          <p class="mt-3">
+            Extra Paints Vinyl Matt is a water based emulsion paint for interior and exterior use.
+            It can be applied on cement, brickwork, hardboard, softboard concrete and asbestos surfaces.
+          </p>
+          <h4 class="mt-5 text-lg font-medium">Surface Preparation</h4>
+          <p>
+            Mix only with clean water. Stir well before use.
+            Ensure the wall or ceiling surfaces are clean, dry and free of dirt, grease and any other impurities.
+          </p>
+          <h4 class="mt-5 text-lg font-medium">Application</h4>
+          <p>
+            <span class="font-medium italic">Brush</span> - Should always be undertaken using an appropriately sized, good quality synthetic or natural fibre brush compatible with the product being applied.
+          </p>
+          <p>
+            <span class="font-medium italic">Roller</span> - This is faster than brush on large even surfaces can be used for the apllication of most decorative paints.
+            Application of paint should only be carried out in good weather conditions.
+          </p>
+        </div>
+      </div>
+      <div class="mt-16 flex flex-wrap gap-12">
+        <div class="lg:w-1/2 text-justify">
+          <h3 class="mt-5 text-2xl font-medium">Storage Advice</h3>
+          <p>
+            This product is water based and must be protected from frost and extreme temperatures.
+            We accept no responsibility for the detoriation of the contents or packaging after this date.
+          </p>
+          <h3 class="mt-5 text-2xl font-medium">Environmental and Disposal Advice</h3>
+          <p>
+            Do not empty into drains or watercourses. Dispose of contents/container to waste disposal site in accordance with local/national regulations.
+            Containers may be recycled.
+          </p>
+          <h3 class="mt-5 text-2xl font-medium">Health and Safety</h3>
+          <p>
+            Keep out of reach of children. Ensure good ventilation during application and drying.
+            Ensure paint does not get into eyes, on skin, or on clothing.
+            Use the correct protective and safety wear.
+            If medical advice is needed, have product container or label at hand.
+          </p>
+          <p class="mt-5">
+            <span class="font-medium">IF ON SKIN</span>: Wash with plenty of soap and water.
+            Do not use solvent thinners or White Spirit. Continue rinsing.
+            <br>
+            <span class="font-medium">IF SWALLOWED</span>: Call a doctor if you feel unwell.
+          </p>
+        </div>
+        <div>
+          <h3 class="text-2xl font-bold">Related Products</h3>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+            <a href="covercoat.html" class="mt-3 p-3 bg-white inline-flex items-center rounded-xl shadow-xl">
+              <img class="h-16" src="https://firebasestorage.googleapis.com/v0/b/portfolio-83ae9.appspot.com/o/extrapaints%2Fproducts%2Fcovercoat%2Fcovercoat_20_a.png?alt=media" alt="covercoat">
+              <h2 class="ml-5 text-lg font-medium">Covercoat</h2>
+            </a>
+            <a href="silk.html" class="mt-3 p-3 bg-white inline-flex items-center rounded-xl shadow-xl">
+              <img class="h-16" src="https://firebasestorage.googleapis.com/v0/b/portfolio-83ae9.appspot.com/o/extrapaints%2Fproducts%2Fsilk%2Fsilk_20_a.png?alt=media" alt="silk">
+              <h2 class="ml-5 text-lg font-medium">Silk Vinyl</h2>
+            </a>
+            <a href="gloss.html" class="mt-3 p-3 bg-white inline-flex items-center rounded-xl shadow-xl">
+              <img class="h-16" src="https://firebasestorage.googleapis.com/v0/b/portfolio-83ae9.appspot.com/o/extrapaints%2Fproducts%2Fgloss%2Fgloss_20_a.png?alt=media" alt="gloss">
+              <h2 class="ml-5 text-lg font-medium">Super Gloss</h2>
+            </a>
+            <a href="plastic_emulsion.html" class="mt-3 p-3 bg-white inline-flex items-center rounded-xl shadow-xl">
+              <img class="h-16" src="https://firebasestorage.googleapis.com/v0/b/portfolio-83ae9.appspot.com/o/extrapaints%2Fproducts%2Fpl%2Fpl_20_a.png?alt=media" alt="plastic emulsion">
+              <h2 class="ml-5 text-lg font-medium">Plastic Emulsion</h2>
+            </a>
+            <a href="wallrock.html" class="mt-3 p-3 bg-white inline-flex items-center rounded-xl shadow-xl">
+              <img class="h-16" src="https://firebasestorage.googleapis.com/v0/b/portfolio-83ae9.appspot.com/o/extrapaints%2Fproducts%2Fwallrock%2Fwallrock_20_a.png?alt=media" alt="wallrock">
+              <h2 class="ml-5 text-lg font-medium">Wallrock</h2>
+            </a>
+            <a href="weathercoat.html" class="mt-3 p-3 bg-white inline-flex items-center rounded-xl shadow-xl">
+              <img class="h-16" src="https://firebasestorage.googleapis.com/v0/b/portfolio-83ae9.appspot.com/o/extrapaints%2Fproducts%2Fweathercoat%2Fweathercoat_20_a.png?alt=media" alt="weathercoat">
+              <h2 class="ml-5 text-lg font-medium">Weather Coat</h2>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-8">
+      <div class="container mx-auto px-4 lg:px-8 xl:px-0 py-8">
+        <div class="relative flex items-center">
+          <h1 class="ml-8 absolute text-5xl font-display tracking-wide">
+            Contact Us
+          </h1>
+          <img class="h-20" src="/brush.svg" alt="">
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div class="mt-12">
+            <div class="flex items-center">
+              <img class="h-16" src="/phone.svg" alt="phone">
+              <div class="ml-4 flex flex-col gap-1.5 text-xl font-medium">
+                <a href="tel://+254111701666">+254 111 701 666</a>
+                <a href="tel://+254111964114">+254 111 964 114</a>
+              </div>
+            </div>
+            <div class="mt-8 flex items-center">
+              <img class="h-12" src="/whatsapp.svg" alt="whatsapp">
+              <span class="ml-8 text-xl font-medium">
+                +254 738 425 408
+              </span>
+            </div>
+            <div class="mt-8 flex items-center">
+              <img class="h-12" src="/email.svg" alt="email">
+              <a href="mailto:info@extrapaints.co.ke" class="ml-8 text-xl font-medium">
+                info@extrapaints.co.ke
+              </a>
+            </div>
+            <div class="mt-8 flex items-center">
+              <img class="h-16" src="/location.svg" alt="location">
+              <div class="ml-4 flex flex-col text-lg font-medium">
+                <span>P.O BOX 23959 - 00625,</span>
+                <span>Donholm Godown,</span>
+                <span>Orion Drive,</span>
+                <span>Nairobi, Kenya</span>
+              </div>
+            </div>
+          </div>
+          <div class="rounded-3xl overflow-hidden">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.198667141027!2d36.8862082790099!3d-1.29474297670905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f13bd95a385df%3A0xf603c3e52eabaca9!2sDonholm%2C%20Nairobi!5e0!3m2!1sen!2ske!4v1685220144068!5m2!1sen!2ske" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      var mattUrl = `https://firebasestorage.googleapis.com/v0/b/portfolio-83ae9.appspot.com/o/extrapaints%2Fproducts%2Fmatt%2F`;
+      var images = [
+        `${mattUrl}matt_20_a.png?alt=media`,
+        `${mattUrl}matt_20_b.png?alt=media`,
+        `${mattUrl}matt_20_c.png?alt=media`,
+        `${mattUrl}matt_20_d.png?alt=media`,
+        `${mattUrl}matt_4_a.png?alt=media`,
+        `${mattUrl}matt_4_b.png?alt=media`,
+        `${mattUrl}matt_4_c.png?alt=media`,
+        `${mattUrl}matt_4_d.png?alt=media`,
+      ];
+
+      var currentIndex = 0;
+      var imageViewer = document.getElementById("image-viewer");
+      var thumbnails = document.getElementsByClassName("thumbnail");
+
+      function showImage(index) {
+        if (index >= 0 && index < images.length) {
+          imageViewer.src = images[index];
+          currentIndex = index;
+        }
+      }
+
+      // Show the first image on page load
+      showImage(0);
+
+      window.addEventListener("load", function() {
+        for (var i = 0; i < thumbnails.length; i++) {
+          thumbnails[i].src = images[i];
+          thumbnails[i].setAttribute("data-index", i);
+          thumbnails[i].addEventListener("click", function() {
+            var index = parseInt(this.getAttribute("data-index"));
+            showImage(index);
+          });
+        }
+      });
+    </script>
+
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
