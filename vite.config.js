@@ -13,7 +13,15 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(root, 'index.html'),
-        portfolio: resolve(root, 'portfolio.html'),
+        products: resolve(root, 'products.html'),
+        gallery: resolve(root, 'gallery.html'),
+        covercoat: resolve(root, 'covercoat.html'),
+        silk: resolve(root, 'silk.html'),
+        matt: resolve(root, 'matt.html'),
+        gloss: resolve(root, 'gloss.html'),
+        plastic_emulsion: resolve(root, 'plastic_emulsion.html'),
+        wallrock: resolve(root, 'wallrock.html'),
+        weathercoat: resolve(root, 'weathercoat.html'),
       },
     },
   },
