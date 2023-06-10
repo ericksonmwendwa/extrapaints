@@ -1,5 +1,5 @@
 const imageArray = [];
-for (let i = 1; i <= 22; i++) {
+for (let i = 1; i <= 27; i++) {
   const imageName = `img_${i}.jpeg?alt=media`;
   const imageObject = {
     src: imageName,
