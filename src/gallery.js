@@ -19,7 +19,7 @@ jQuery(document).ready(function () {
     // ### gallery settings ### 
     thumbnailHeight: 150,
     thumbnailWidth: 150,
-    itemsBaseURL: 'https://firebasestorage.googleapis.com/v0/b/portfolio-83ae9.appspot.com/o/extrapaints%2Fgallery%2F',
+    itemsBaseURL: 'https://firebasestorage.googleapis.com/v0/b/extrapaints-2ccfc.appspot.com/o/gallery%2F',
 
     // GALLERY AND THUMBNAIL LAYOUT
     galleryMosaic : [                       // default layout
